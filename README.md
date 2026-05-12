@@ -67,7 +67,7 @@ PART 11: Save Models
 PART 12: Performance Comparison Table
 <img width="1010" height="310" alt="image" src="https://github.com/user-attachments/assets/7a02eab2-6f65-4477-a78d-b2565fbd3248" />
 
-GUIDE QUESTIONS (FINAL REFLECTION)
+# GUIDE QUESTIONS (FINAL REFLECTION)
 A. Model Performance
 1. MobileNetV2 achieved the highest test accuracy (0.9818); it likely generalized best due to efficient architecture and training.
 2. EfficientNetB0 had the lowest performance (test accuracy 0.0938); likely due to poor convergence, possible data or configuration issues.
@@ -95,6 +95,7 @@ G. Real-World Application
 18. The system can be integrated into a mobile/web app using ONNX/TensorFlow Lite or REST APIs for real-time predictions.
 
 
+## notebook links: https://drive.google.com/drive/folders/1q-5hsxk4evcmVyZQAkaKGTnmnAnNHxMg?usp=sharing
 
 
 
