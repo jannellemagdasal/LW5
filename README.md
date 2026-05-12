@@ -67,6 +67,34 @@ PART 11: Save Models
 PART 12: Performance Comparison Table
 <img width="1010" height="310" alt="image" src="https://github.com/user-attachments/assets/7a02eab2-6f65-4477-a78d-b2565fbd3248" />
 
+GUIDE QUESTIONS (FINAL REFLECTION)
+A. Model Performance
+1. MobileNetV2 achieved the highest test accuracy (0.9818); it likely generalized best due to efficient architecture and training.
+2. EfficientNetB0 had the lowest performance (test accuracy 0.0938); likely due to poor convergence, possible data or configuration issues.
+3. Loss values were lowest for the best models (MobileNetV2: 0.1199); poorly performing models had much higher loss.
+B. Evaluation Metrics
+4. Accuracy alone ignores class imbalance and does not reveal performance differences across classes.
+5. DenseNet121 and MobileNetV2 both had the best F1-score (0.97), indicating strong balance of precision and recall.
+6. Precision and recall were very high and nearly identical for the top models, but dropped in weaker models.
+C. Confusion Matrix Analysis
+7. Classes with lower precision/recall (e.g., from baseline/Teachable Machine) were likely misclassified frequently.
+8. Misclassifications were concentrated in classes with similar features; best models showed few such errors.
+D. ROC and AUC
+9. DenseNet121, MobileNetV2, and EfficientNetB0 had the highest (≈0.99) AUC scores.
+10 High AUC reflects excellent discrimination between classes, even under varying thresholds.
+E. Explainability (Grad-CAM)
+11. Grad-CAM showed models like DenseNet121 focused on correct, relevant image regions.
+12. Yes, the best models focused on the features distinguishing each class.
+13. DenseNet121 produced the most meaningful (focused) heatmaps.
+F. Model Comparison & Improvement
+14. MobileNetV2 is recommended for deployment due to highest test accuracy and stability.
+15. Improvements could include more data, regularization, fine-tuning, or data augmentation.
+G. Real-World Application
+16. The model can automate species or object identification (e.g., plant recognition) in real time.
+17. Risks include misdiagnosis or incorrect identification leading to user error or harm.
+18. The system can be integrated into a mobile/web app using ONNX/TensorFlow Lite or REST APIs for real-time predictions.
+
+
 
 
 
