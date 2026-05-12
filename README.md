@@ -32,4 +32,45 @@ PART 8: Confusion Matrix Plot
 <img width="1185" height="683" alt="image" src="https://github.com/user-attachments/assets/11a58403-a78e-43e5-93f1-37ef832b8278" />
 <img width="1155" height="599" alt="image" src="https://github.com/user-attachments/assets/28554244-228f-4b54-9c0a-f74fbe070ff5" />
 
+PART 9: ROC Curve & AUC
+<img width="513" height="460" alt="Screenshot 2026-04-27 230010" src="https://github.com/user-attachments/assets/922216bd-f33d-4562-86a8-2a4693c40426" />
+
+
+PART 10: Grad-CAM (Explainability)
+Grad-CAM Visualization
+1. DenseNet121 — ROC/AUC Excellent (≈0.99)
+Visualization:
+The Grad-CAM heatmap consistently highlights the precise, relevant parts of input images—such as the unique leaf patterns or core features of each plant.
+Most activation regions are tightly clustered around the object of interest with minimal 'leak' onto the background.
+Interpretation:
+This model’s high accuracy and metrics are reflected in very focused and interpretable attention regions, supporting trustworthy predictions.
+
+2. MobileNetV2 — ROC/AUC Excellent (≈0.99)
+Visualization:
+Grad-CAM maps show strong, well-localized activations covering the significant object areas. In most cases, feature highlights overlap largely with the main distinguishing characteristics (e.g., shape, edges).
+Interpretation:
+Almost as precise as DenseNet121, the highlighted areas are mostly within the object, with only occasional minor spillage onto irrelevant regions. This supports its superior performance.
+
+3. EfficientNetB0 — ROC/AUC Excellent (≈0.99)
+Visualization:
+The Grad-CAM heatmaps still generally cover the main object, but sometimes are slightly broader or less sharp versus the top two models.
+
+In some misclassified samples, attention occasionally covers both the object and some background/neighboring features.
+Interpretation:
+Still provides useful and interpretable focus, but with slightly less confidence and precision in complex scenarios—mirroring the slightly lower training accuracy.
+
+PART 11: Save Models
+<img width="938" height="878" alt="image" src="https://github.com/user-attachments/assets/4b2c3d43-b604-4d31-9128-35b657b25a6a" />
+
+
+
+PART 12: Performance Comparison Table
+<img width="1010" height="310" alt="image" src="https://github.com/user-attachments/assets/7a02eab2-6f65-4477-a78d-b2565fbd3248" />
+
+
+
+
+
+
+
 
